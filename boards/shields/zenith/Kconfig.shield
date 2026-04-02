@@ -13,3 +13,8 @@ config SHIELD_ZENITH_RIGHT
 
 config SHIELD_ZENITH_LEFT_PERIPHERAL
     def_bool $(shields_list_contains,zenith_left_peripheral)
+
+# This sets the role automatically based on the shield name
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y if SHIELD_ZENITH_LEFT || SHIELD_ZENITH_DONGLE
+    default n if SHIELD_ZENITH_LEFT_PERIPHERAL || SHIELD_ZENITH_RIGHT
