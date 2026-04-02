@@ -8,7 +8,6 @@ include:
   # The Left half must now be forced to be a "Peripheral"
   - board: seeeduino_xiao_ble
     shield: zenith_left_peripheral
-    cmake-args: -DCONFIG_ZMK_SPLIT_BLE_ROLE_CENTRAL=n
     artifact-name: zenith_left_peripheral
 
   # The Right half is already a Peripheral by default
