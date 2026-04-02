@@ -1,9 +1,9 @@
 include:
   - board: seeeduino_xiao_ble
-    shield: zenith_left
+    shield: zenith_left_peripheral
 
   - board: seeeduino_xiao_ble
-    shield: zenith_right    
+    shield: zenith_right_peripheral    
 
   - board: seeeduino_xiao_ble
     shield: settings_reset
@@ -14,4 +14,8 @@ include:
   - board: nice_nano_v2
     shield: zenith_dongle dongle_display
 
+  - board: seeeduino_xiao_ble
+    shield: zenith_left
 
+  - board: seeeduino_xiao_ble
+    shield: zenith_right 
