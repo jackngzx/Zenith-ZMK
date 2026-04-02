@@ -1,21 +1,32 @@
 include:
-  - board: seeeduino_xiao_ble
-    shield: zenith_left_peripheral
-
-  - board: seeeduino_xiao_ble
-    shield: zenith_right_peripheral    
-
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-
+# --- DONGLE BUILD ---
+  # The Dongle is the "Central"
   - board: nice_nano_v2
-    shield: settings_reset
+    shield: zenith_dongle dongle_display # Ensure "zenith_dongle" is the correct shield name
+    artifact-name: zenith_dongle dongle_display
     
-  - board: nice_nano_v2
-    shield: zenith_dongle dongle_display
-
+  # The Left half must now be forced to be a "Peripheral"
   - board: seeeduino_xiao_ble
     shield: zenith_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_BLE_ROLE_CENTRAL=n
+    artifact-name: zenith_left_peripheral
 
+  # The Right half is already a Peripheral by default
   - board: seeeduino_xiao_ble
-    shield: zenith_right 
+    shield: zenith_right
+    artifact-name: zenith_right_peripheral
+
+  # Reset firmware
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+
+  - board: nice_nano_v2
+    shield: settings_reset
+
+
+# --- STANDARD NO-DONGLE BUILD ---
+  # Left is the "Central" (talks to PC)
+  - board: seeeduino_xiao_ble
+    shield: zenith_left
+  - board: seeeduino_xiao_ble
+    shield: zenith_right
