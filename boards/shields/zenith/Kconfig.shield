@@ -10,3 +10,9 @@ config SHIELD_ZENITH_LEFT
 
 config SHIELD_ZENITH_RIGHT
     def_bool $(shields_list_contains,zenith_right)
+
+config SHIELD_ZENITH_LEFT_PERIPHERAL
+    def_bool $(shields_list_contains,zenith_left_peripheral)
+
+config SHIELD_ZENITH_RIGHT_PERIPHERAL
+    def_bool $(shields_list_contains,zenith_right_peripheral)
