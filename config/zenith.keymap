@@ -29,14 +29,7 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -77,7 +70,7 @@
 
         sym {
             bindings = <
-&kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp BACKSPACE  &kp GRAVE  &kp LEFT_BRACE  &kp MINUS  &kp PLUS  &kp RIGHT_BRACE  &kp PIPE  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp BACKSPACE  &kp GRAVE  &kp LEFT_BRACE  &kp MINUS  &kp PLUS  &kp RIGHT_BRACE  &kp PIPE  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
