@@ -3,7 +3,7 @@ include:
   # The Dongle is the "Central"
   - board: nice_nano_v2
     shield: zenith_dongle dongle_display # Ensure "zenith_dongle" is the correct shield name
-    artifact-name: zenith_dongle dongle_display
+    artifact-name: zenith_dongle
     
   # The Left half must now be forced to be a "Peripheral"
   - board: seeeduino_xiao_ble
