@@ -63,18 +63,21 @@
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         num {
+            label = "NUM";
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans
             >;
         };
 
         sym {
+            label = "SYM";
             bindings = <
 &kp TILDE  &kp LEFT_PARENTHESIS  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp BACKSPACE  &kp GRAVE  &kp LEFT_BRACE  &kp MINUS  &kp PLUS  &kp RIGHT_BRACE  &kp PIPE  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp ASTERISK  &kp SLASH  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         func {
+            label = "FUNC";
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_BLE  &none  &kp HOME  &kp UP_ARROW  &kp END  &kp PRINTSCREEN  &kp DEL  &out OUT_TOG  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &none  &out OUT_USB  &none  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &none  &none  &ext_power EP_ON  &none  &none  &none  &none  &sys_reset  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none  &none  &none  &none  &none  &none  &none  &none
             >;
