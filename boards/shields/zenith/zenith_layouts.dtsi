@@ -6,7 +6,6 @@
         display-name = "Default";
 
         kscan = <&kscan0>;
-        wakeup-source;
         transform = <&matrix_transform0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
