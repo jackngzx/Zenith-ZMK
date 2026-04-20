@@ -102,7 +102,7 @@
             //   Right: J=SHIFT  K=CTRL  L=ALT  ;=GUI
 
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp LCTRL  &hml LGUI A  &hml LALT S  &hml LCTRL D  &kp F  &kp G  &kp H  &kp J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI  &kp SQT  &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &lt 3 ESC  &kp LALT  &kp LGUI  &lt 1 SPACE  &kp ENTER  &mo 2  &mo 3
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp LCTRL  &kp A  &hml LALT S  &hml LCTRL D  &hml LEFT_COMMAND F  &kp G  &kp H  &hmr RIGHT_COMMAND J  &hmr RCTRL K  &hmr RALT L  &kp SEMI  &kp SQT  &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &lt 3 ESC  &kp LALT  &kp LGUI  &lt 1 SPACE  &kp ENTER  &mo 2  &mo 3
             >;
         };
 
@@ -113,7 +113,7 @@
         num {
             label = "NUM";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans  &kp N7  &kp N8  &kp N9  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &trans  &kp N0  &trans  &trans
             >;
         };
 
